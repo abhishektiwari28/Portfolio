@@ -82,7 +82,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('myhome198.jpg') no-repeat;
+    background: transparent;
     background-size: cover;
     background-position: center;
 }
