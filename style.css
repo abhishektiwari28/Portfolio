@@ -146,7 +146,7 @@ section {
 
 .home-content h1 {
     position: relative;
-    display: inline-block;
+    display: block;
     font-size: 6rem;
     font-weight: 800;
     line-height: 1.2;
@@ -1126,12 +1126,22 @@ span {
     
     .home {
         flex-direction: column;
+        justify-content: center;
         min-height: 100vh;
-        padding-bottom: 8rem;
+        padding: 10rem 4% 8rem;
     }
     
     .home-content {
         padding-bottom: 3rem;
+    }
+    
+    .home-content h1 {
+        font-size: 5.5rem;
+        width: 100%;
+    }
+    
+    .home-content .text-animate h3 {
+        font-size: 3rem;
     }
     
     .btn-box {
@@ -1175,6 +1185,15 @@ span {
 }
 
 @media (max-width:520px){
+    .home-content h1 {
+        font-size: 4.2rem;
+        width: 100%;
+    }
+    
+    .home-content .text-animate h3 {
+        font-size: 2.5rem;
+    }
+    
     .btn-box {
         width: 100%;
         gap: 1rem;
@@ -1191,6 +1210,15 @@ span {
     .home-sci {
         margin-top: 2rem;
     }
+    
+    .footer {
+        padding: 2rem 4%;
+        gap: 1rem;
+    }
+    
+    .footer-text {
+        font-size: 1.4rem;
+    }
 }
 
 /* animations */
@@ -1200,7 +1228,7 @@ span {
         width: 0;
     }
     65%,85%{
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -1218,7 +1246,7 @@ span {
         width: 0;
     }
     65%,78%,85%{
-        width: 35%;
+        width: 40%;
         opacity: 1;
     }
     75%,81%{
