@@ -1214,10 +1214,12 @@ span {
     .footer {
         padding: 2rem 4%;
         gap: 1rem;
+        flex-wrap: nowrap;
     }
     
     .footer-text {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        flex: 1;
     }
 }
 
