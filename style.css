@@ -1144,6 +1144,14 @@ span {
         font-size: 3rem;
     }
     
+    .home-content .text-animate h3::after {
+        animation: textRevealMobile 6s linear infinite;
+    }
+    
+    .home-content .text-animate h3::before {
+        animation: homeCursorTextMobile 6s linear infinite;
+    }
+    
     .btn-box {
         width: 100%;
         max-width: 34.5rem;
@@ -1181,6 +1189,28 @@ span {
     
     .education .education-row {
         flex-direction: column;
+    }
+    
+    @keyframes textRevealMobile{
+        0%,10%,100%{
+            width: 0;
+        }
+        65%,85%{
+            width: 72%;
+        }
+    }
+    
+    @keyframes homeCursorTextMobile{
+        0%,10%,100%{
+            width: 0;
+        }
+        65%,78%,85%{
+            width: 72%;
+            opacity: 1;
+        }
+        75%,81%{
+            opacity: 0;
+        }
     }
 }
 
